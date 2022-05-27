@@ -1,11 +1,7 @@
-const loves = document.querySelectorAll(".love");
-console.log(loves);
+const loves = document.querySelectorAll('.love');
 
-loves.forEach((love)=> {
-    love,addEventListener('click', function(this) {
-       // alert("you clicked love")
-       this.classList.add(".loveactive")
-    })
-    return
-    
-})
+loves.forEach((love) => {
+	love.addEventListener('click', function () {
+		love.classList.toggle('loveactive');
+	});
+});
